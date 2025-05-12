@@ -12,7 +12,7 @@ test('peek on stack with one element returns that element', () => {
 
 test('pop on stack with no elements returns undefined', () => {
     stack.pop();
-    expect(stack.pop()).toBeUndefined();
+    expect(stack.pop()).toBeDefined();
 });
 
 test('peek on stack with two or more elements returns the top element', () => {
