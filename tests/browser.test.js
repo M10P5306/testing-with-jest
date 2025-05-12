@@ -29,7 +29,6 @@ test('Empty strings can not be pushed to the stack', async () => {
     let push = await driver.findElement(By.id('push'));
     await push.click();
     let alert = await driver.switchTo().alert();
-    await alert.sendKeys("");
     await alert.accept();
     let stack = await driver.findElement(By.id('top_of_stack')).getText();
     expect(stack).toEqual("undefined");
