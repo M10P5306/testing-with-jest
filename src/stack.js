@@ -6,9 +6,11 @@ let stack = [];
 exports.push = function (x) {
     if (x.length == 0) {
         console.log(x + ": detta ska inte vara tomt");
-       return;
-    };
-    stack.push(x); 
+    }
+    else  {
+        stack.push(x); 
+    }
+    
 };
 
 // Returnerar det översta elementet i stacken och tar bort det
