@@ -5,6 +5,7 @@ let stack = [];
 // Lägger ett element överst i stacken
 exports.push = function (x) {
     if (x === "") {
+        console.log(x + ": detta ska inte vara tomt");
        return;
     };
     stack.push(x); 
